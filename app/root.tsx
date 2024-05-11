@@ -5,6 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { SideMenu } from "./components/SideMenu";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,6 +17,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <h1>Remix</h1>
+        <SideMenu />
         {children}
         <ScrollRestoration />
         <Scripts />
