@@ -1,5 +1,5 @@
 [[d1_databases]]
 binding = "DB" # i.e. available in your Worker on env.DB
-database_name = "space-search-dev"
-database_id = "24567e6f-4883-4587-ba33-39a52151fbca"
+database_name = ""
+database_id = ""
 migrations_dir="./app/drizzle/migrations"
