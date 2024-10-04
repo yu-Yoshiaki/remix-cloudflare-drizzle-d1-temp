@@ -1,15 +1,17 @@
+import type { LinksFunction } from '@remix-run/cloudflare'
 import {
   Links,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
-import stylesheet from "~/tailwind.css?url";
-import { LinksFunction } from '@remix-run/cloudflare';
+} from '@remix-run/react'
+import stylesheet from '~/tailwind.css?url'
+import { SideMenu } from './components/SideMenu'
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesheet }
-];
+  { rel: 'stylesheet', href: stylesheet },
+]
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -28,9 +30,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
-  );
+  )
 }
 
 export default function App() {
-  return <Outlet />;
+  return <Outlet />
 }

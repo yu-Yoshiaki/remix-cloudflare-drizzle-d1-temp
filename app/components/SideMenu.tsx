@@ -1,11 +1,11 @@
-import { Link } from "@remix-run/react";
+import { Link } from '@remix-run/react'
 
 const list = [
-  { to: "/", label: "TOP" },
-  { to: "/books/", label: "BOOKS" },
-];
+  { to: '/', label: 'TOP' },
+  { to: '/books/', label: 'BOOKS' },
+]
 
-export const SideMenu = () => {
+export function SideMenu() {
   return (
     <ul>
       {list.map((d) => {
@@ -13,8 +13,8 @@ export const SideMenu = () => {
           <li key={d.label}>
             <Link to={d.to}>{d.label}</Link>
           </li>
-        );
+        )
       })}
     </ul>
-  );
-};
+  )
+}

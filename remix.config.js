@@ -3,4 +3,4 @@ module.exports = {
   serverBuildTarget: 'cloudflare-workers',
   // tailwind: true,
   // postcss: true,
-};
+}
